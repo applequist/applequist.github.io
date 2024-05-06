@@ -1,7 +1,13 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://Applequist.github.io/'
 languageCode = 'en-us'
 title = 'brieuc.desoutter'
 theme = 'basic'
+copyright = '(c) 2024 Brieuc Desoutter.'
+
+[Params]
+author = 'Brieuc Desoutter'
+description = 'The personal website of Brieuc Desoutter.'
+
 
 [[menus.main]]
 name = 'Home'
