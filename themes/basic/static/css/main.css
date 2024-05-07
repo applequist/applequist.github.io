@@ -66,6 +66,10 @@
 	/* --display-h1-decoration: 1; -- Whether to dipslay h1 docartions (present) or not (comment out). */
 }
 
+html, body {
+	height: 100%;
+}
+
 html {
 	background-color: var(--background-color);
 	color: var(--font-color);
@@ -76,7 +80,9 @@ html {
 }
 
 body {
-	margin: 1em;
+	width: 80%;
+	max-width: var(80em);
+	margin: 0 auto;
 }
 
 .flex-row {
@@ -110,7 +116,6 @@ body {
 /* navigation menu item */
 .banner a {
 	margin-left: 1em;
-	margin-right: 1em;
 	color: var(--secondary-color);
 }
 
