@@ -4,17 +4,21 @@
   {{ partial "head.html" . }}
 </head>
 <body>
-  <header>
-    {{ partial "header.html" . }}
-  </header>
-  <nav>
-    {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
-  </nav>
-  <main>
-    {{ block "main" . }}{{ end }}
-  </main>
-  <footer>
-    {{ partial "footer.html" . }}
-  </footer>
+    <div class="banner flex-row">
+      <header>
+        <h1>{{ site.Title }}</h1>
+      </header>
+      <nav>
+        {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+      </nav>
+    </div>
+    <div class="content">
+      <main>
+        {{ block "main" . }}{{ end }}
+      </main>
+      <footer>
+        <p>{{ .Site.Copyright }}. All rights reserved.</p>
+      </footer>
+    </div>
 </body>
 </html>
