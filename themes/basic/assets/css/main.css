@@ -1,22 +1,170 @@
-body {
-  color: #222;
-  font-family: sans-serif;
-  line-height: 1.5;
-  margin: 1rem;
-  max-width: 768px;
+@font-face {
+	font-family: 'Roboto Mono';
+	src: url('../font/RobotoMono-Regular.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 400;
+	text-rendering: optimizeLegibility;
 }
 
-header {
-  border-bottom: 1px solid #222;
+@font-face {
+	font-family: 'Roboto Mono';
+	src: url('../font/RobotoMono-Italic.ttf') format('truetype');
+	font-style: italic;
+	font-weight: 400;
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	font-family: 'Roboto Mono';
+	src: url('../font/RobotoMono-Bold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 700;
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	font-family: 'Roboto Mono';
+	src: url('../font/RobotoMono-BoldItalic.ttf') format('truetype');
+	font-style: italic;
+	font-weight: 700;
+	text-rendering: optimizeLegibility;
+}
+
+:root {
+	/* the base font size */
+	--global-font-size: 16px; 
+	/* the baseline height. Modify to achieve best readability */
+	--global-line-height: 1.4rem; 
+	/* A global spacer usued to consistently space things */
+	--global-space: 4px; 
+	/* the font for the web site */
+	--font-stack: Roboto Mono, Menly, Monaco, monospace, serif; 
+	/* same as above but for code */
+	--mono-font-stack: Roboto Mono, Menly, Monaco, monospace, serif; 
+	/* the page background color */
+	--background-color: #1a1b26; /* tokyonight-night bg */
+	/* the base font color for text, headlines, blockquotes, lists, etc */
+	--font-color: #c0caf5; /* tokyonight-night fg */ 
+	/* background color for selected/highlighted text */
+	--invert-font-color: #292e42; /* tokyonight-night bg_highlight */
+	/* the primary color for links and buttons */
+	--primary-color: #7dcfff; /* tokyonight-night cyan */ 
+	/* The secondary color is more subtle than the primary color. Used for image captions: */
+	--secondary-color: #565f89; /* tokyonight-night comment */ 
+	/* Used for error alerts and form validation */
+	--error-color: #db4b4b; /* tokyonight-night red */
+	/* the background color of progress bars. */
+	--progress-bar-background: #16161e; /* tokyonight-night bg_dark */
+	/* The fill color, indicating progress in progress bars. */
+	--progress-bar-fill: #73daca; /* tokyonight-night green1 */ 
+	/* The background color of <code> elements */
+	--code-bg-color: #2c2d40; /* tokyonight-night bg_dark */ 
+	/* The background color of <pre> elements. Also applies to <code> inside <pre> */
+	--block-background-color: #2c2d40;  */
+	/* the page width */
+	--page-width: 70rem; 
+	/* --display-h1-decoration: 1; -- Whether to dipslay h1 docartions (present) or not (comment out). */
+}
+
+html, body {
+	height: 100%;
+}
+
+html {
+	background-color: var(--background-color);
+	color: var(--font-color);
+	font-family: var(--font-stack);
+	font-size: var(--global-font-size);
+	font-weight: normal;
+	line-height: var(--global-line-height);
+}
+
+body {
+	width: 80%;
+	max-width: var(80rem);
+	margin: 0 auto;
+}
+
+.flex-row {
+	display: flex;
+}
+
+.basic h1,
+.basic h2,
+.basic h3,
+.basic h4,
+.basic h5,
+.basic h6 {
   margin-bottom: 1rem;
 }
 
-footer {
-  border-top: 1px solid #222;
-  margin-top: 1rem;
+.basic h1,
+.basic h2,
+.basic h3 {
+  font-weight: bold;
+  margin-top: 2rem;
 }
 
-a {
-  color: #00e;
-  text-decoration: none;
+.basic h4,
+.basic h5,
+.basic h6 {
+  font-weight: normal;
+  margin-top: 1.5rem;
 }
+
+.basic p {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.basic ul {
+  padding-left: 2rem;
+  list-style-type: "-  ";
+  list-style-position: outside;
+}
+
+.basic ol {
+  padding-left: 2rem;
+  list-style-type: decimal;
+  list-style-position: outside;
+}
+
+.banner {
+	margin-top: 1rem;
+	margin-bottom: 2em;
+}
+
+.banner header {
+	flex: 1;
+}
+
+.banner .logo {
+	font-weight: bold;
+	color: var(--primary-color);
+}
+
+.banner nav {
+	flex: 4;
+}
+
+/* navigation menu */
+.banner nav ul {
+	display: flex;
+	justify-content: flex-end;
+}
+
+/* navigation menu item */
+.banner nav a {
+	margin-left: 1rem;
+	color: var(--secondary-color);
+}
+
+.banner nav a.active {
+	color: var(--font-color);
+}
+
+.content {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+

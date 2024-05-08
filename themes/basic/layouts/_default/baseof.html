@@ -3,10 +3,10 @@
 <head>
   {{ partial "head.html" . }}
 </head>
-<body>
+<body class="basic">
     <div class="banner flex-row">
       <header>
-        <h1>{{ site.Title }}</h1>
+        <p class="logo">{{ site.Title }}</p>
       </header>
       <nav>
         {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
