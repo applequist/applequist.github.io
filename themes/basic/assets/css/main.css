@@ -129,6 +129,10 @@ body {
   list-style-position: outside;
 }
 
+.basic a:hover {
+  text-decoration: underline;
+}
+
 .banner {
 	margin-top: 1rem;
 	margin-bottom: 2em;
@@ -151,6 +155,7 @@ body {
 .banner nav ul {
 	display: flex;
 	justify-content: flex-end;
+	list-style-type: none;
 }
 
 /* navigation menu item */
