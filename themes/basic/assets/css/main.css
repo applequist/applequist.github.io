@@ -60,7 +60,7 @@
 	/* The background color of <code> elements */
 	--code-bg-color: #2c2d40; /* tokyonight-night bg_dark */ 
 	/* The background color of <pre> elements. Also applies to <code> inside <pre> */
-	--block-background-color: #2c2d40;  */
+	--block-background-color: #2c2d40; 
 	/* the page width */
 	--page-width: 70rem; 
 	/* --display-h1-decoration: 1; -- Whether to dipslay h1 docartions (present) or not (comment out). */
@@ -81,7 +81,7 @@ html {
 
 body {
 	width: 80%;
-	max-width: var(80rem);
+	max-width: var(--page-width);
 	margin: 0 auto;
 }
 
