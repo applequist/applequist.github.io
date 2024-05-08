@@ -91,7 +91,7 @@ body {
 
 .banner {
 	margin-top: 1em;
-	margin-bottom: 1em;
+	margin-bottom: 2em;
 }
 
 .banner header {
@@ -108,18 +108,18 @@ body {
 }
 
 /* navigation menu */
-.banner ul {
+.banner nav ul {
 	display: flex;
 	justify-content: flex-end;
 }
 
 /* navigation menu item */
-.banner a {
+.banner nav a {
 	margin-left: 1em;
 	color: var(--secondary-color);
 }
 
-nav a.active {
+.banner nav a.active {
 	color: var(--font-color);
 }
 
