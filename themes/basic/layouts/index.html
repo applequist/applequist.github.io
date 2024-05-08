@@ -1,11 +1,25 @@
 {{ define "main" }}
-  {{ .Content }}
+<div class="home flex-row">
+  <section class="home-infos flex-col">
+    <img alt="A monochromatic self-portrait." src="/img/face.jpg">
+    <div class="home-infos-links flex-col">
+      <p>Links</p>
+      <ul>
+        <li><a href="{{ .Site.Params.LinkedIn_url }}">LinkIn</a></li>
+        <li><a href="{{ .Site.Params.GitHub_url }}">GitHub</a></li>
+      </ul>
+    </div>
+  </section>
+  <section class="home-main">
+    {{ .Content }}
 
-  <h2>Latest Posts</h2>
-  <ul>
-    {{ range first 3 (where site.RegularPages "Type" "in" "posts").ByDate.Reverse }}
-    <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
-    {{ end }}
-  </ul>
+    <h2>Latest Posts</h2>
+    <ul>
+      {{ range first 3 (where site.RegularPages "Type" "in" "posts").ByDate.Reverse }}
+      <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+      {{ end }}
+    </ul>
 
+  </section>
+</div>
 {{ end }}

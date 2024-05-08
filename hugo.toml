@@ -7,6 +7,8 @@ copyright = '(c) 2024 Brieuc Desoutter'
 [Params]
 author = 'Brieuc Desoutter'
 description = 'The personal website of Brieuc Desoutter.'
+LinkedIn_url = "https://www.linkedin.com/in/bdesoutter/"
+GitHub_url = "https://github.com/Applequist"
 
 [[menus.main]]
 name = 'Home'
