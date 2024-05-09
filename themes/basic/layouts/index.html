@@ -16,7 +16,9 @@
     <h2>Latest Posts</h2>
     <ul>
       {{ range first 3 (where site.RegularPages "Type" "in" "posts").ByDate.Reverse }}
-      <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}: {{ .Description }}</a>
+      </li>
       {{ end }}
     </ul>
 

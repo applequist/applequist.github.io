@@ -1,4 +1,5 @@
 {{ define "main" }}
-{{ .Content }}
+  <p><a href={{ .Page.CurrentSection.RelPermalink }}>../</a></p>
+  {{ .Content }}
 {{ end }}
 

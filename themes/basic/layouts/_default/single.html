@@ -1,4 +1,6 @@
 {{ define "main" }}
+  <p><a href={{ .Page.CurrentSection.RelPermalink }}>../</a></p>
+
   {{ .Content }}
   {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
   {{ if .Store.Get "hasMermaid" }}

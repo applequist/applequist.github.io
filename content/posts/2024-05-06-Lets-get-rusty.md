@@ -1,9 +1,12 @@
 +++
 title = "Let's get rusty!"
+description = "Show how code is rendered. Using Rust of course!"
 date = 2024-05-06T17:53:34+03:00
 draft = true
 tags = ['rust']
 +++
+
+Rust is system programming language that empowers anyone to write correct, safe and fast programs.
 
 ## Rust rocks!
 

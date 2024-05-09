@@ -1,11 +1,10 @@
 +++
-title = 'Full Markdown'
+title = 'On your Mark(down)! Go!'
+description = 'Show rendering of (almost) all Markdown constructs.'
 author = 'Brieuc Desoutter'
 date = 2024-05-08T10:35:53+03:00
 draft = true
 +++
-
-# Full Markdown syntax examples (Header 1)
 
 This document demonstrates how we style all markdown syntax constructs.
 

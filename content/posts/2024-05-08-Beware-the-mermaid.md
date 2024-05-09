@@ -1,5 +1,6 @@
 +++
 title = 'Beware the Mermaid!'
+description = 'Show an example of a rendered Mermaidjs diagram.'
 author = 'Brieuc Desoutter'
 date = 2024-05-08T09:47:17+03:00
 draft = true
