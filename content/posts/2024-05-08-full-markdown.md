@@ -1,14 +1,30 @@
 +++
 title = 'On your Mark(down)! Go!'
-description = 'Show rendering of (almost) all Markdown constructs.'
+description = 'Show rendering of Markdown constructs.'
 author = 'Brieuc Desoutter'
 date = 2024-05-08T10:35:53+03:00
 draft = true
 +++
 
-This document demonstrates how we style all markdown syntax constructs.
+This document demonstrates how ~~all~~ most markdown constructs are rendered.  
+It probably has too many titles. Just so you know...
 
-## Basic Text Style (Header 2)
+## Headings
+
+All headings are visually separated from the content above.  
+Headings 1, 2 and 3 are rendered in bold.  
+Headings 4, 5, and 6 are rendered in normal text.
+
+## Paragraphs (header 2)
+
+Separate paragraphs with a blank line.
+
+Like this.
+
+For line breaks.  
+End a line with 2 or more whitespaces and then return.
+
+## Basic Text Style
 
 ### Emphasis (Header 3)
 
