@@ -2,6 +2,7 @@
   <p><a href={{ .Page.Site.BaseURL }}>../</a></p>
   {{ .Content }}
 
+  <h2>All {{ .Params.title }}</h2>
   {{ with .Pages.ByLastmod.Reverse }}
     {{ range . }}
       <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>

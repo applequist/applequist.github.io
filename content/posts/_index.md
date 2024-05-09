@@ -1,3 +1,7 @@
++++
+title = "Posts"
++++
+
 Occasionally I publish some posts here about various topics.  
 
 ***Opinions*** expressed in these posts are mine and ***MINE ONLY***!  
