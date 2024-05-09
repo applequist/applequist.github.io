@@ -138,6 +138,41 @@ body {
   text-decoration: underline;
 }
 
+.basic code,
+.basic pre {
+	background-color: var(--secondary-color);
+	padding: 2px;
+	/* border: 1px solid var(--font-color); */
+	/* border-radius: 4px; */
+}
+
+.basic pre > code {
+	padding: 0px;
+	border: none;
+}
+
+.basic table {
+	table-layout: fixed;
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 0.5rem;
+}
+
+.basic table + p {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.basic thead {
+	border-bottom: 1px solid var(--secondary-color);
+}
+
+.basic th,
+.basic td {
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+
 .banner {
 	margin-top: 1rem;
 	margin-bottom: 2em;
@@ -191,8 +226,8 @@ body {
 
 .home-infos img {
 	width: 10rem;
-	border: 5px solid var(--font-color);
 	border-radius: 50%;
+	/* border: 5px solid var(--font-color); */
 }
 
 .home-main {

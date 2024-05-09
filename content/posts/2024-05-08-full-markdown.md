@@ -27,7 +27,7 @@ Surround words with `**` to put word in **bold**.
 
 #### Italic and Bold
 
-You can also use bold ***and** italic! Crazy huh?
+You can also use ***bold and italic***! Crazy huh?
 
 ### Inline Code
 
@@ -91,7 +91,7 @@ To add another element in a list while preserving the continuity of the list, in
 ## Code
 
 Say hello to my favorite language!
-```rust
+```rust {lineNos=true}
 fn hello() {
   println!("Hello World!");
 }
@@ -111,7 +111,7 @@ This can be useful too.
 
 ```
 My favorite programming language is [rust][1]. Didn't you know?
-
+...
 [1]:<https://rust-lang.org>
 ```
 
