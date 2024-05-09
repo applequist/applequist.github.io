@@ -1,11 +1,16 @@
 {{ define "main" }}
   <p><a href={{ .Page.Site.BaseURL }}>../</a></p>
   {{ .Content }}
-  {{ range .Pages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
-    {{ if .Truncated }}
-      <a href="{{ .RelPermalink }}">More...</a>
+
+  {{ with .Pages.ByLastmod.Reverse }}
+    {{ range . }}
+      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+      {{ .Summary }}
+      {{ if .Truncated }}
+        <a href="{{ .RelPermalink }}">More...</a>
+      {{ end }}
     {{ end }}
+  {{ else }}
+    <p>Not much to see yet. It's a work in progress. Please come check again soon!</p>
   {{ end }}
 {{ end }}

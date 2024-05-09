@@ -14,13 +14,18 @@
     {{ .Content }}
 
     <h2>Latest Posts</h2>
-    <ul>
-      {{ range first 3 (where site.RegularPages "Type" "in" "posts").ByDate.Reverse }}
-      <li>
-        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}: {{ .Description }}</a>
-      </li>
-      {{ end }}
-    </ul>
+    {{ $latest_posts := first 5 (where site.RegularPages "Type" "in" "posts").ByLastmod.Reverse }}
+    {{ with $latest_posts }}
+      <ul>
+        {{ range $latest_posts }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .LinkTitle }}: {{ .Description }}</a>
+        </li>
+        {{ end }}
+      </ul>
+    {{ else }} 
+      <p>No much to see yet. It's a work in progress. Come check again soon!</p>
+    {{ end }}
 
   </section>
 </div>
