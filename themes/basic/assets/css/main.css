@@ -98,6 +98,7 @@ body {
 
 .flex-row {
 	display: flex;
+	flex-flow: row wrap;
 }
 
 .flex-col {
@@ -231,7 +232,7 @@ body {
 }
 
 .home-infos {
-  flex: 1;
+  flex: 0 11rem;
   margin-top: 1rem;
   align-items: left;
 }
@@ -247,7 +248,8 @@ body {
 }
 
 .home-main {
-  flex: 4;
+  flex: 4 11rem;
+  margin-left: 2rem;
 }
 
 .highlight {
