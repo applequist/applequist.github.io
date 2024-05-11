@@ -9,7 +9,6 @@ draft = true
 # On your mark(down)s! Go!
 
 This document demonstrates how ~~all~~ most markdown constructs are rendered.  
-It probably has too many titles. Just so you know...
 
 ## Headings
 

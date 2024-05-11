@@ -190,6 +190,14 @@ body {
 	margin-right: 0.5rem;
 }
 
+/* .basic th:not(:last-of-type) { */
+/* 	border-right: 1px solid var(--comment); */
+/* } */
+
+/* .basic td:not(:last-of-type) { */
+/* 	border-right: 1px solid var(--comment); */
+/* } */
+
 .banner {
 	margin-top: 1rem;
 	margin-bottom: 2em;
