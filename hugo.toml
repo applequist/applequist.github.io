@@ -43,6 +43,6 @@ lineNos = true
 lineNumbersInTable = false
 noClasses = true
 noHl = false
-style = 'catppuccin-latte'
+style = 'catppuccin-mocha'
 tabWidth = 2
 

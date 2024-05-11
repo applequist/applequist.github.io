@@ -6,31 +6,38 @@ draft = true
 tags = ['rust']
 +++
 
-Rust is system programming language that empowers anyone to write correct, safe and fast programs.
+Rust is system programming language that empowers anyone to write correct, safe and fast programs.  
+And that's cool!
+
 
 ## Rust rocks!
+
+First order of business: Install `rustup`:
+```bash
+$ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
 
 Here is the classic hello world:
 
 1. Create a binary package:
 
-```bash
-$ cargo new hello --bin
-```
+    ```bash
+    $ cargo new hello --bin
+    ```
 
-2. Edit the `hello/src/main.rs` file to look like this:
+1. Edit the `hello/src/main.rs` file to look like this:
 
-```rust
-fn main() {
-  println!("Hello World!");
-}
-```
+    ```rust
+    fn main() {
+      println!("Hello World!");
+    }
+    ```
 
-3. And compile and run the program with:
+1. And compile and run the program with:
 
-```bash
-$ cargo run hello
-```
+    ```bash
+    $ cargo run hello
+    ```
 
 Et voila!
 

@@ -240,6 +240,10 @@ body {
   flex: 4;
 }
 
+.highlight {
+	border: 1px dashed var(--secondary-color);
+}
+
 footer {
 	display: flex;
 	justify-content: center;
