@@ -6,7 +6,14 @@
   {{ if .Store.Get "hasMermaid" }}
     <script type="module">
       import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
-      mermaid.initialize({ startOnLoad: true });
+      mermaid.initialize({ startOnLoad: true, theme: 'base', themeVariables: {
+        'darkMode': true,
+        'background': '#1e1e2e',
+        'fontFamily': 'Roboto Mono',
+        'primaryColor': '#39596c',
+        // 'primaryTextColor': '#c0caf5',
+        // 'secondaryColor': '#565f89',
+      }});
     </script>
   {{ end }}
 {{ end }}
