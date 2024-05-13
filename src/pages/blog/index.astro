@@ -1,0 +1,31 @@
+---
+import Page from '../../layouts/Page.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+);
+---
+<Page>
+	<p><a href="/">../</a></p>
+
+	<p>Occasionally I publish some posts here about various topics.</p>
+
+	<p>
+		<strong>Opinions</strong> expressed in these posts are mine and <em><strong>MINE ONLY</strong></em>!
+		(Although they might be shared by others sometimes and that's fine)
+		You may disagree with me and that's fine too: let's just agree to disagree.
+	</p>
+
+	<p>
+		I try to get <strong>facts</strong> right though. Feel free to correct me if I got some wrong.
+	</p>
+
+	<h1>All Blog posts</h1>
+	{
+		posts.map((post) => (
+			<h2><a href={`/blog/${post.slug}`}>{post.data.title}</a></h2>
+			<p>{post.data.description}</p>
+		))
+	}
+</Page>

@@ -1,0 +1,239 @@
+:root {
+	/* the base font size */
+	--global-font-size: 16px; 
+	/* the baseline height. Modify to achieve best readability */
+	--global-line-height: 1.4rem; 
+	/* A global spacer usued to consistently space things */
+	--global-space: 4px; 
+	/* the font for the web site */
+	--font-stack: Source Code Pro, Menly, Monaco, monospace, serif; 
+	/* same as above but for code */
+	--mono-font-stack: Source Code Pro, Menly, Monaco, monospace, serif; 
+	/* the page background color */
+	--bg: #1a1b26;
+	--bg-dark: #16161e;
+	--bg-highlight: #292e42;
+	/* the base font color for text, headlines, blockquotes, lists, etc */
+	--fg: #c0caf5;
+	--fg-dark: #a9b1d6;
+	--fg-guttter: #3b4261;
+	--dark3: #545c7e;
+	--dark5: #737aa2;
+	--comment: #565f89;
+	--cyan: #7dcfff;
+	--blue: #7aa2f7;
+	--blue0: #3d59a1;
+	--blue1: #2ac3de;
+	--blue2: #0db9d7;
+	--blue5: #89ddff;
+	--blue6: #b4f9f8;
+	--blue7: #394b70;
+	--magenta: #bb9af7;
+	--magenta2: #fff007c;
+	--purple: #9d7cd8;
+	--orange: #ff9e64;
+	--yellow: #e0af68;
+	--green: #9ece6a;
+	--green1: #73daca;
+	--green2: #41a6b5;
+	--teal: #1abc9c;
+	--red: #f7768e;
+	--red1: #db4b4b;
+	--code-bg: #1e1e2e;
+	/* the page width */
+	--page-width: 70rem; 
+	/* --display-h1-decoration: 1; -- Whether to dipslay h1 docartions (present) or not (comment out). */
+}
+
+html, body {
+	height: 100%;
+}
+
+html {
+	background-color: var(--bg);
+	color: var(--fg);
+	font-family: var(--font-stack);
+	font-size: var(--global-font-size);
+	font-weight: normal;
+	line-height: var(--global-line-height);
+}
+
+body {
+	width: 80%;
+	max-width: var(--page-width);
+	margin: 0 auto;
+}
+
+.flex-row {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.flex-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.basic h1,
+.basic h2,
+.basic h3,
+.basic h4,
+.basic h5,
+.basic h6 {
+  margin-bottom: 1rem;
+}
+
+.basic h1,
+.basic h2,
+.basic h3 {
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.basic h4,
+.basic h5,
+.basic h6 {
+  margin-top: 1.5rem;
+}
+
+.basic p {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.basic ul {
+  padding-left: 2rem;
+  list-style-type: "-  ";
+  list-style-position: outside;
+}
+
+.basic ol {
+  padding-left: 2rem;
+  list-style-type: decimal;
+  list-style-position: outside;
+}
+
+.basic a:hover {
+  text-decoration: underline;
+}
+
+.basic code,
+.basic pre {
+	background-color: var(--code-bg);
+	padding: 2px;
+	border: 1px dashed var(--comment);
+	/* border-radius: 4px; */
+}
+
+.basic pre > code {
+	padding: 0px;
+	border: none;
+}
+
+.basic blockquote {
+	padding-left: 1.5rem;
+	border-left: 1px solid var(--comment);
+	font-style: italic;
+}
+
+.basic table {
+	table-layout: fixed;
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 0.5rem;
+}
+
+.basic table + p {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.basic thead {
+	border-bottom: 1px solid var(--comment);
+}
+
+.basic th,
+.basic td {
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+
+/* .basic th:not(:last-of-type) { */
+/* 	border-right: 1px solid var(--comment); */
+/* } */
+
+/* .basic td:not(:last-of-type) { */
+/* 	border-right: 1px solid var(--comment); */
+/* } */
+
+.banner {
+	margin-top: 1rem;
+	margin-bottom: 2em;
+}
+
+.banner header {
+	flex: 1;
+}
+
+.banner .prompt {
+	margin-top: 0;
+	font-weight: bold;
+	color: var(--blue);
+}
+
+.banner nav {
+	flex: 4;
+}
+
+/* navigation menu */
+.banner nav ul {
+	display: flex;
+	justify-content: flex-end;
+	list-style-type: none;
+}
+
+/* navigation menu item */
+.banner nav a {
+	margin-left: 1rem;
+	color: var(--comment);
+}
+
+.banner nav a.active {
+	color: var(--fg);
+}
+
+.content {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.home-infos {
+  flex: 0 11rem;
+  margin-top: 1rem;
+  align-items: left;
+}
+
+.home-infos figure {
+	width: 11rem;
+}
+
+.home-infos img {
+	width: 10rem;
+	border-radius: 50%;
+	/* border: 5px solid var(--fg); */
+}
+
+.home-main {
+  flex: 4 11rem;
+  margin-left: 2rem;
+}
+
+.highlight {
+	border: 1px dashed var(--comment);
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+}
+
