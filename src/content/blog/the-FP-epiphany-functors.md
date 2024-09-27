@@ -2,7 +2,6 @@
 title: 'The FP Epiphany - Functors'
 description: 'A serie about learning functional programming. This post is about functors.'
 pubDate: 'Oct 1 2024'
-hidden: true
 ---
 
 Rust has been my favorite programming language for a while now:
