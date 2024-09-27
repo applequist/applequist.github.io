@@ -51,7 +51,7 @@ html, body {
 
 html {
 	background-color: var(--bg);
-	color: var(--fg);
+	color: var(--fg-dark);
 	font-family: var(--font-stack);
 	font-size: var(--global-font-size);
 	font-weight: normal;
