@@ -117,7 +117,6 @@ body {
   text-decoration: underline;
 }
 
-.basic code,
 .basic pre {
 	background-color: var(--code-bg);
 	padding: 2px;

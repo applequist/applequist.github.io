@@ -9,9 +9,6 @@ export default defineConfig({
 	trailingSlash: 'always',
 	integrations: [mdx(), sitemap()],
 	markdown: {
-		shikiConfig: {
-			theme: "one-dark-pro",
-			langs: ["haskell", "rust", "bash"]
-		}
+		syntaxHighlight: 'prism'
 	}
 });
