@@ -8,4 +8,10 @@ export default defineConfig({
 	site: 'https://Applequist.github.io',
 	trailingSlash: 'always',
 	integrations: [mdx(), sitemap()],
+	markdown: {
+		shikiConfig: {
+			theme: "one-dark-pro",
+			langs: ["haskell", "rust", "bash"]
+		}
+	}
 });
