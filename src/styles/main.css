@@ -2,13 +2,13 @@
 	/* the base font size */
 	--global-font-size: 16px; 
 	/* the baseline height. Modify to achieve best readability */
-	--global-line-height: 1.4rem; 
+	--global-line-height: 1.6rem; 
 	/* A global spacer usued to consistently space things */
 	--global-space: 4px; 
 	/* the font for the web site */
-	--font-stack: Source Code Pro, Menly, Monaco, monospace, serif; 
+	--font-stack: monospace, serif; 
 	/* same as above but for code */
-	--mono-font-stack: Source Code Pro, Menly, Monaco, monospace, serif; 
+	--mono-font-stack: monospace, serif; 
 	/* the page background color */
 	--bg: #1a1b26;
 	--bg-dark: #16161e;
