@@ -1,3 +1,6 @@
+@import url(destyle.css);
+@import url(prism-one-dark.css);
+
 :root {
 	/* the base font size */
 	--global-font-size: 16px; 
