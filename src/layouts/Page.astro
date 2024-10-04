@@ -10,6 +10,17 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<head>
 		<Head title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
+	
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-E05V0M6FVY"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-E05V0M6FVY');
+	</script>
+
 	<body class="basic">
 		<Banner />
 		<div class="content">
