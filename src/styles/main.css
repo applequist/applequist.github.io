@@ -44,14 +44,14 @@
 	--red1: #db4b4b;
 	--code-bg: #1e1e2e;
 	/* the page width */
-	--page-width: 70rem; 
+	--page-width: 75ch;
 	/* --display-h1-decoration: 1; -- Whether to dipslay h1 docartions (present) or not (comment out). */
 }
 
 html, body {
 	height: 100%;
 	margin: 0 auto;
-	width: 75ch;
+	max-width: var(--page-width);
 }
 
 html {
@@ -61,10 +61,6 @@ html {
 	font-size: var(--global-font-size);
 	font-weight: normal;
 	line-height: var(--global-line-height);
-}
-
-body {
-	max-width: var(--page-width);
 }
 
 .flex-row {
