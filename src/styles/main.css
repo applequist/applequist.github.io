@@ -50,6 +50,8 @@
 
 html, body {
 	height: 100%;
+	margin: 0 auto;
+	width: 75ch;
 }
 
 html {
@@ -62,9 +64,7 @@ html {
 }
 
 body {
-	width: 80%;
 	max-width: var(--page-width);
-	margin: 0 auto;
 }
 
 .flex-row {
