@@ -48,10 +48,14 @@
 	/* --display-h1-decoration: 1; -- Whether to dipslay h1 docartions (present) or not (comment out). */
 }
 
-html, body {
+html {
 	height: 100%;
 	margin: 0 auto;
 	max-width: var(--page-width);
+}
+
+body {
+	margin: 0 0.5rem;
 }
 
 html {
