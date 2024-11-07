@@ -1,6 +1,6 @@
 ---
-title: "The FP Incomprehension"
-description: "Reading code and making sense of it when starting with Haskell"
+title: "The FP Incomprehension - Functions are Functors"
+description: "Mapping over function is really function composition."
 pubDate: "Nov 7 2024"
 ---
 
