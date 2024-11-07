@@ -1,5 +1,5 @@
 ---
-title: "The FP Incomprehension - Functions are Functors"
+title: "The FP Epiphany - Functions are Functors"
 description: "Mapping over function is really function composition."
 pubDate: "Nov 7 2024"
 ---
@@ -61,7 +61,7 @@ fmap sum (Just [1, 2, 3])
 
 And that is simply fully applying `fmap`.
 
-### Stacked Functors
+### Functions maybe Stacked Functors
 
 The second way to look at it suggested by [int-index](https://discourse.haskell.org/t/understanding-evaluation-with-fmaps/10689/4?u=applequist) is to recognize that we are apply `sum` over
 two levels of Functors.
