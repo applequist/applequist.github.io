@@ -42,7 +42,7 @@ The first way suggested by [haanss](https://discourse.haskell.org/t/understandin
 So we're mapping `fmap sum` over `Just`? Yep! And `Just` is a function of type `a -> Maybe a` and as such, it is a `Functor`:
 
 ```haskell
-instance Functor ((->) r) -- function that returns r
+instance Functor ((->) r) -- function that takes a r
 ```
 
 > Functions are Functors and mapping a function over a function is just composing functions.
